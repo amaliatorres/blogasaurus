@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="blogasaurus.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 
   <div class="topnav">
@@ -8,27 +8,57 @@
   <a href="#gallery">News</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
+  </div>
 
 
 
-</div>
 
-    <br>
-    <body>
-     <h2>Pusheen's Blog</h2>
-     <br>
-     <br>
-     <br>
 
-     <img id = "pusheen"src = "pusheen.png"
+<body>
+
+  <br>
+  <br>
+  <h2>Pusheen's Travel Blog</h2>
+  <br>
+  <br>
+  <br>
+  <!-- The grid: four columns -->
+  <div class="row">
+    <div class="column">
+      <img src="nature2.jpg" alt="Nature" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="nature2.jpg" alt="Snow" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="nature2.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="nature2.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="nature2.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="nature2.jpg" alt="Lights" onclick="myFunction(this);">
+    </div>
+  </div>
+    <img id = "pusheen"src = "pusheen.png"
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%" >
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
 </body>
 
+
+
+
 <script src="index.js"></script>
-
-
-<div id="menu" >
-    <a href="#" id="home">
-        <img id='pusheenImage' src="pusheen.png" alt="logo" width="300px" height="150px"
-onmouseover="onHover();" onmouseout="offHover();" />
-    </a>
-</div>
