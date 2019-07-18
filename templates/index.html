@@ -18,7 +18,7 @@
   <br>
   <h2>Pusheen's Travel Blog</h2>
   <br>
-  <br>
+  <p> Here are some of the places I've traveled to </p><p> Click on Any Destination and scroll down </p>
   <br>
   <!-- The grid: four columns -->
   <div class="row">
@@ -43,13 +43,17 @@
   </div>
 
 
+
+
     <!-- The expanding image container -->
     <div class="container">
       <!-- Close the image -->
       <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
       <!-- Expanded image -->
-      <img id="expandedImg" style="width:100%" >
+
+        <img id="expandedImg" style="width:100%" >
+        <img src="{{ image_url }}" class="pusheen"></img>
 
       <!-- Image text -->
       <div id="imgtext"></div>
